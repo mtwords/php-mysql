@@ -59,7 +59,7 @@ table {border-collapse: collapse; border: 1px solid black;}
 <table>
 	<tr>
 		<?php
-			function asia($array) {
+			$asia = array_walk($multiCity, function($array) {
 				if ($array[2] === 'Asia') {
 					echo "<tr>";
 					foreach ($array as $key => $value) {
@@ -67,9 +67,7 @@ table {border-collapse: collapse; border: 1px solid black;}
 					}
 					echo "</tr>";
 				}
-			}
-			
-			$asia = array_walk($multiCity, "asia");
+			});
 		?>
 	</tr>
 </table>
