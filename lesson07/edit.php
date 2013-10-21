@@ -22,30 +22,33 @@
 	<title>Edit a ToDo</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/todo.css" rel="stylesheet" media="screen">
+	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular">
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/todo.css" rel="stylesheet" media="screen">
 </head>
 <body>
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
-	<form action="" class="form-inline" method="POST">
-		<p>
-			<label for="subject">Edit ToDo:</label>
-		</p>
-
-		<p>
-			<?php
-				$oid = htmlspecialchars($_GET['oid']);
-				$db_handler = new ToDoHandler();
-				$todo = $db_handler->getToDo($oid);
-
-				echo "<input type='text' name='edited_subject' value='" . $todo[0]["text"] . "' />";
-			?>
-			<input type="submit" class="btn btn-primary" value="save" />
-		</p>
-	</form>
+	<div class="container well">
+		<form action="" class="form-inline" method="POST">
+			<p>
+				<label class="fancyFont" "subject">Edit ToDo:</label>
+			</p>
+	
+			<p>
+				<?php
+					$oid = htmlspecialchars($_GET['oid']);
+					$db_handler = new ToDoHandler();
+					$todo = $db_handler->getToDo($oid);
+	
+					echo "<input type='text' name='edited_subject' value='" . $todo[0]["text"] . "' />";
+				?>
+				<input type="submit" class="btn btn-primary" value="save" />
+			</p>
+		</form>
+	</div>
 
 </body>
 </html>

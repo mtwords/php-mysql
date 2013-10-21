@@ -2,8 +2,18 @@ body {
 	padding: 20px;
 }
 
+.title {
+	font-family: "Reenie Beanie", arial, sans-serif;
+	border-bottom: thin dotted black;
+}
+
 .completed {
 	text-decoration: line-through;
+}
+
+.fancyFont {
+	font-family: "Reenie Beanie", arial, sans-serif;
+	font-size: 18pt;
 }
 
 .todo {
@@ -14,4 +24,15 @@ body {
 	min-height: 120px;
 	background-color: #FFFF00;
 	border: thin solid black;
+}
+
+/* Bootstrap overrides */
+
+.well {
+	background-color: #FBED96;
+	box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+}
+
+.table tbody tr.success > td {
+	background-color: #DCF88F;
 }
