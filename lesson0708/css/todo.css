@@ -1,0 +1,43 @@
+body {
+	background-color: #484745;
+	padding: 20px;
+}
+
+.title {
+	font-family: "Reenie Beanie", arial, sans-serif;
+	border-bottom: thin dotted black;
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+.fancyFont {
+	font-family: "Reenie Beanie", arial, sans-serif;
+	font-size: 18pt;
+}
+
+.todo {
+	float: left;
+	margin: 10px;
+	padding: 5px;
+	min-width: 100px;
+	min-height: 120px;
+	background-color: #FFFF00;
+	border: thin solid black;
+}
+
+/* Bootstrap overrides */
+.table th, .table td {
+	border-top: none;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.well {
+	background-color: #FBED96;
+	box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+}
+
+.table tbody tr.success > td {
+	background-color: #DCF88F;
+}
