@@ -13,10 +13,10 @@
 			}
 			return self::$instance;
 		}
-			
+
 		public function sortByName() {
 			$kantone = new Kanton();
-			usort($kantone, function($a, $b) {
+			usort($kantone->getIterator(), function($a, $b) {
 				if ($a['Kanton'] == $b['Kanton']) {
 					return 0;
 				}
@@ -24,7 +24,7 @@
 			});
 			return $kantone;
 		}
-		
+
 		public function sortByHauptort() {
 			$kantone = new Kanton();
 			usort($kantone, function($a, $b) {
@@ -63,9 +63,8 @@
 		public function findKantonByKuerzel($kuerzel) {
 			$kantone = new Kanton();
 			$iterator = $kantone->getIterator();
-			//foreach ($iterator as $key => $value) {
 			foreach ($iterator as $kanton) {
-				if ($kuerzel === $kanton[0]['Kürzel']) {
+				if ($kuerzel === strtolower($kanton['Kuerzel'])) {
 					return $kanton;
 				}
 			}

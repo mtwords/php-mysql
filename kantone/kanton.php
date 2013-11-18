@@ -4,11 +4,11 @@
 		private $kantone = array (
 			0 =>
 			array (
-				'Kürzel' => 'ZH',
-				'Kanton' => 'Zürich',
+				'Kuerzel' => 'ZH',
+				'Kanton' => 'Zuerich',
 				'Standesstimme' => '1',
 				'Beitritt' => 1351,
-				'Hauptort' => 'Zürich',
+				'Hauptort' => 'Zuerich',
 				'Einwohner 1' => '1392396',
 				'Ausländer 2' => '24,9 %',
 				'Fläche 3' => '1729',
@@ -18,7 +18,7 @@
 			),
 			1 =>
 			array (
-				'Kürzel' => 'BE',
+				'Kuerzel' => 'BE',
 				'Kanton' => 'Bern',
 				'Standesstimme' => '1',
 				'Beitritt' => 1353,
@@ -32,7 +32,7 @@
 			),
 			2 =>
 			array (
-				'Kürzel' => 'LU',
+				'Kuerzel' => 'LU',
 				'Kanton' => 'Luzern ',
 				'Standesstimme' => '1',
 				'Beitritt' => 1332,
@@ -46,7 +46,7 @@
 			),
 			3 =>
 			array (
-				'Kürzel' => 'UR',
+				'Kuerzel' => 'UR',
 				'Kanton' => 'Uri ',
 				'Standesstimme' => '1',
 				'Beitritt' => 12917,
@@ -60,7 +60,7 @@
 			),
 			4 =>
 			array (
-				'Kürzel' => 'SZ',
+				'Kuerzel' => 'SZ',
 				'Kanton' => 'Schwyz ',
 				'Standesstimme' => '1',
 				'Beitritt' => 12917,
@@ -74,7 +74,7 @@
 			),
 			5 =>
 			array (
-				'Kürzel' => 'OW',
+				'Kuerzel' => 'OW',
 				'Kanton' => 'Obwalden',
 				'Standesstimme' => '0,5',
 				'Beitritt' => 12917,
@@ -88,7 +88,7 @@
 			),
 			6 =>
 			array (
-				'Kürzel' => 'NW',
+				'Kuerzel' => 'NW',
 				'Kanton' => 'Nidwalden ',
 				'Standesstimme' => '0,5',
 				'Beitritt' => 12917,
@@ -102,7 +102,7 @@
 			),
 			7 =>
 			array (
-				'Kürzel' => 'GL',
+				'Kuerzel' => 'GL',
 				'Kanton' => 'Glarus ',
 				'Standesstimme' => '1',
 				'Beitritt' => 1352,
@@ -116,7 +116,7 @@
 			),
 			8 =>
 			array (
-				'Kürzel' => 'ZG',
+				'Kuerzel' => 'ZG',
 				'Kanton' => 'Zug ',
 				'Standesstimme' => '1',
 				'Beitritt' => 1352,
@@ -130,7 +130,7 @@
 			),
 			9 =>
 			array (
-				'Kürzel' => 'FR',
+				'Kuerzel' => 'FR',
 				'Kanton' => 'Freiburg ',
 				'Standesstimme' => '1',
 				'Beitritt' => 1481,
@@ -144,7 +144,7 @@
 			),
 			10 =>
 			array (
-				'Kürzel' => 'SO',
+				'Kuerzel' => 'SO',
 				'Kanton' => 'Solothurn ',
 				'Standesstimme' => '1',
 				'Beitritt' => 1481,
@@ -158,7 +158,7 @@
 			),
 			11 =>
 			array (
-				'Kürzel' => 'BS',
+				'Kuerzel' => 'BS',
 				'Kanton' => 'Basel-Stadt ',
 				'Standesstimme' => '0,5',
 				'Beitritt' => 1501,
@@ -172,7 +172,7 @@
 			),
 			12 =>
 			array (
-				'Kürzel' => 'BL',
+				'Kuerzel' => 'BL',
 				'Kanton' => 'Basel-Landschaft',
 				'Standesstimme' => '0,5',
 				'Beitritt' => 1501,
@@ -186,7 +186,7 @@
 			),
 			13 =>
 			array (
-				'Kürzel' => 'SH',
+				'Kuerzel' => 'SH',
 				'Kanton' => 'Schaffhausen ',
 				'Standesstimme' => '1',
 				'Beitritt' => 1501,
@@ -200,7 +200,7 @@
 			),
 			14 =>
 			array (
-				'Kürzel' => 'AR',
+				'Kuerzel' => 'AR',
 				'Kanton' => 'Appenzell Ausserrhoden',
 				'Standesstimme' => '0,5',
 				'Beitritt' => 1513,
@@ -214,7 +214,7 @@
 			),
 			15 =>
 			array (
-				'Kürzel' => 'AI',
+				'Kuerzel' => 'AI',
 				'Kanton' => 'Appenzell Innerrhoden',
 				'Standesstimme' => '0,5',
 				'Beitritt' => 1513,
@@ -228,7 +228,7 @@
 			),
 			16 =>
 			array (
-				'Kürzel' => 'SG',
+				'Kuerzel' => 'SG',
 				'Kanton' => 'St. Gallen',
 				'Standesstimme' => '1',
 				'Beitritt' => 1803,
@@ -242,8 +242,8 @@
 			),
 			17 =>
 			array (
-				'Kürzel' => 'GR',
-				'Kanton' => 'Graubünden',
+				'Kuerzel' => 'GR',
+				'Kanton' => 'Graubuenden',
 				'Standesstimme' => '1',
 				'Beitritt' => 1803,
 				'Hauptort' => 'Chur',
@@ -256,7 +256,7 @@
 			),
 			18 =>
 			array (
-				'Kürzel' => 'AG',
+				'Kuerzel' => 'AG',
 				'Kanton' => 'Aargau',
 				'Standesstimme' => '1',
 				'Beitritt' => 1803,
@@ -270,7 +270,7 @@
 			),
 			19 =>
 			array (
-				'Kürzel' => 'TG',
+				'Kuerzel' => 'TG',
 				'Kanton' => 'Thurgau',
 				'Standesstimme' => '1',
 				'Beitritt' => 1803,
@@ -284,7 +284,7 @@
 			),
 			20 =>
 			array (
-				'Kürzel' => 'TI',
+				'Kuerzel' => 'TI',
 				'Kanton' => 'Tessin',
 				'Standesstimme' => '1',
 				'Beitritt' => 1803,
@@ -298,7 +298,7 @@
 			),
 			21 =>
 			array (
-				'Kürzel' => 'VD',
+				'Kuerzel' => 'VD',
 				'Kanton' => 'Waadt',
 				'Standesstimme' => '1',
 				'Beitritt' => 1803,
@@ -312,7 +312,7 @@
 			),
 			22 =>
 			array (
-				'Kürzel' => 'VS',
+				'Kuerzel' => 'VS',
 				'Kanton' => 'Wallis',
 				'Standesstimme' => '1',
 				'Beitritt' => 1815,
@@ -326,7 +326,7 @@
 			),
 			23 =>
 			array (
-				'Kürzel' => 'NE',
+				'Kuerzel' => 'NE',
 				'Kanton' => 'Neuenburg ',
 				'Standesstimme' => '1',
 				'Beitritt' => 1815,
@@ -340,7 +340,7 @@
 			),
 			24 =>
 			array (
-				'Kürzel' => 'GE',
+				'Kuerzel' => 'GE',
 				'Kanton' => 'Genf',
 				'Standesstimme' => '1',
 				'Beitritt' => 1815,
@@ -354,7 +354,7 @@
 			),
 			25 =>
 			array (
-				'Kürzel' => 'JU',
+				'Kuerzel' => 'JU',
 				'Kanton' => 'Jura ',
 				'Standesstimme' => '1',
 				'Beitritt' => 1979,
@@ -423,7 +423,7 @@
 		// --------------------- search --------------------
 		public function findKantonByKuerzel($kuerzel) {
 			foreach ($this->kantone as $kanton) {
-				if ($kuerzel === $kanton['Kürzel']) {
+				if ($kuerzel === $kanton['Kuerzel']) {
 					return $kanton;
 				}
 			}

@@ -9,8 +9,15 @@
 	
 	if (isset($service) && isListAndSort($methode, $sort)) {
 		//echo "list and sort";
-		print_r(KantonHandler::getInstance()->sortByName());
-		return KantonHandler::getInstance()->sortByName();
+		if ($sort === 'name') {
+			print_r(KantonHandler::getInstance()->sortByName());
+		} else if ($sort === 'hauptort') {
+			print_r(KantonHandler::getInstance()->sortByHauptort());
+		} else if ($sort === 'einwohner') {
+			print_r(KantonHandler::getInstance()->sortByEinwohner());
+		} else if ($sort === 'beitritt') {
+			print_r(KantonHandler::getInstance()->sortByBeitritt());
+		}
 	} else if (isset($service) && isSingleAndId($methode, $id)) {
 		print_r(KantonHandler::getInstance()->findKantonByKuerzel($id));
 	} else {

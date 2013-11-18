@@ -1,10 +1,9 @@
 <?php
-	//phpinfo();
 	require_once("kanton.php");
 	require_once("KantonHandler.php");
 
 		
-	$url = 'http://localhost/exercises/kantone/resolver.php?service=kantone&methode=single&id=zh';
+	$url = 'http://localhost/exercises/kantone/resolver.php?service=kantone&methode=list&sort=name';
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
