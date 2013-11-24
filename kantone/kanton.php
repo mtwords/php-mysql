@@ -49,7 +49,7 @@
 				'Kuerzel' => 'UR',
 				'Kanton' => 'Uri ',
 				'Standesstimme' => '1',
-				'Beitritt' => 12917,
+				'Beitritt' => 1291,
 				'Hauptort' => 'Altdorf',
 				'Einwohner 1' => '35382',
 				'Ausländer 2' => '10,6 %',
@@ -63,7 +63,7 @@
 				'Kuerzel' => 'SZ',
 				'Kanton' => 'Schwyz ',
 				'Standesstimme' => '1',
-				'Beitritt' => 12917,
+				'Beitritt' => 1291,
 				'Hauptort' => 'Schwyz',
 				'Einwohner 1' => '147904',
 				'Ausländer 2' => '19,3 %',
@@ -77,7 +77,7 @@
 				'Kuerzel' => 'OW',
 				'Kanton' => 'Obwalden',
 				'Standesstimme' => '0,5',
-				'Beitritt' => 12917,
+				'Beitritt' => 1291,
 				'Hauptort' => 'Sarnen',
 				'Einwohner 1' => '35878',
 				'Ausländer 2' => '13,8 %',
@@ -91,7 +91,7 @@
 				'Kuerzel' => 'NW',
 				'Kanton' => 'Nidwalden ',
 				'Standesstimme' => '0,5',
-				'Beitritt' => 12917,
+				'Beitritt' => 1291,
 				'Hauptort' => 'Stans',
 				'Einwohner 1' => '41311',
 				'Ausländer 2' => '12,4 %',
@@ -430,7 +430,7 @@
 		// --------------------- search --------------------
 		public function findKantonByKuerzel($kuerzel) {
 			foreach ($this->kantone as $kanton) {
-				if ($kuerzel === $kanton['Kuerzel']) {
+				if (strtoupper($kuerzel) === $kanton['Kuerzel']) {
 					return $kanton;
 				}
 			}

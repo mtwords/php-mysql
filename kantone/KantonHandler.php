@@ -1,4 +1,6 @@
 <?php
+	require_once("kanton.php");
+
 	/**
 	 * Singleton for handling Kantone
 	 */

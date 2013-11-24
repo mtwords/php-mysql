@@ -1,16 +1,13 @@
 <?php
-	require_once("kanton.php");
 	require_once("KantonHandler.php");
 
 	$service = htmlspecialchars($_GET["service"]);
 	$methode = htmlspecialchars(strtolower($_GET["methode"]));
 	$sort = htmlspecialchars(strtolower($_GET["sort"]));
-	$id = htmlspecialchars($_GET["id"]);
+	$id = htmlspecialchars(strtolower($_GET["id"]));
 
 	// TODO Strategy-Pattern verwenden!
-	// echo json_encode($array);!!!
 	if (isset($service) && isListAndSort($methode, $sort)) {
-		//echo "list and sort";
 		if ($sort === 'name') {
 			echo json_encode(KantonHandler::getInstance()->sortByName());
 		} else if ($sort === 'hauptort') {
@@ -21,8 +18,7 @@
 			echo json_encode(KantonHandler::getInstance()->sortByBeitritt());
 		}
 	} else if (isset($service) && isSingleAndId($methode, $id)) {
-		json_encode(KantonHandler::getInstance()->findKantonByKuerzel($id));
-		//print_r(KantonHandler::getInstance()->findKantonByKuerzel($id));
+		echo json_encode(KantonHandler::getInstance()->findKantonByKuerzel($id));
 	} else {
 		die("opperation not supported");
 	}
@@ -86,7 +82,7 @@
 			return true;
 		} else if ($id === 'gr') {
 			return true;
-		} else if ($id === 'AG') {
+		} else if ($id === 'ag') {
 			return true;
 		} else if ($id === 'tg') {
 			return true;
