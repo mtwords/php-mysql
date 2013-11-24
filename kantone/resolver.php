@@ -5,21 +5,24 @@
 	$service = htmlspecialchars($_GET["service"]);
 	$methode = htmlspecialchars(strtolower($_GET["methode"]));
 	$sort = htmlspecialchars(strtolower($_GET["sort"]));
-	$id = htmlspecialchars(strtolower($_GET["id"]));
-	
+	$id = htmlspecialchars($_GET["id"]);
+
+	// TODO Strategy-Pattern verwenden!
+	// echo json_encode($array);!!!
 	if (isset($service) && isListAndSort($methode, $sort)) {
 		//echo "list and sort";
 		if ($sort === 'name') {
-			print_r(KantonHandler::getInstance()->sortByName());
+			echo json_encode(KantonHandler::getInstance()->sortByName());
 		} else if ($sort === 'hauptort') {
-			print_r(KantonHandler::getInstance()->sortByHauptort());
+			echo json_encode(KantonHandler::getInstance()->sortByHauptort());
 		} else if ($sort === 'einwohner') {
-			print_r(KantonHandler::getInstance()->sortByEinwohner());
+			echo json_encode(KantonHandler::getInstance()->sortByEinwohner());
 		} else if ($sort === 'beitritt') {
-			print_r(KantonHandler::getInstance()->sortByBeitritt());
+			echo json_encode(KantonHandler::getInstance()->sortByBeitritt());
 		}
 	} else if (isset($service) && isSingleAndId($methode, $id)) {
-		print_r(KantonHandler::getInstance()->findKantonByKuerzel($id));
+		json_encode(KantonHandler::getInstance()->findKantonByKuerzel($id));
+		//print_r(KantonHandler::getInstance()->findKantonByKuerzel($id));
 	} else {
 		die("opperation not supported");
 	}
@@ -83,7 +86,7 @@
 			return true;
 		} else if ($id === 'gr') {
 			return true;
-		} else if ($id === 'ag') {
+		} else if ($id === 'AG') {
 			return true;
 		} else if ($id === 'tg') {
 			return true;

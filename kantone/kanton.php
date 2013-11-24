@@ -367,6 +367,9 @@
 				'Amtssprache' => 'französisch',
 			),
 		);
+		public function getKantone() {
+			return $this->kantone;
+		}
 		// --------------------- end of array --------------------
 
 		public function getIterator() {
@@ -390,6 +393,7 @@
 				}
 				return ($a['Kanton'] < $b['Kanton']) ? -1 : 1;
 			});
+			return $this->kantone;
 		}
 		
 		public function sortByHauptort() {
@@ -399,6 +403,7 @@
 				}
 				return ($a['Hauptort'] < $b['Hauptort']) ? -1 : 1;
 			});
+			return $this->kantone;
 		}
 		
 		public function sortByEinwohner() {
@@ -408,6 +413,7 @@
 				}
 				return ($a['Einwohner 1'] < $b['Einwohner 1']) ? -1 : 1;
 			});
+			return $this->kantone;
 		}
 	
 		public function sortByBeitritt() {
@@ -417,6 +423,7 @@
 				}
 				return ($a['Beitritt'] < $b['Beitritt']) ? -1 : 1;
 			});
+			return $this->kantone;
 		}
 		
 	

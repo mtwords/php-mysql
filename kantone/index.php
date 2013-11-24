@@ -1,9 +1,5 @@
 <?php
-	require_once("kanton.php");
-	require_once("KantonHandler.php");
-
-		
-	$url = 'http://localhost/exercises/kantone/resolver.php?service=kantone&methode=list&sort=name';
+	$url = 'http://localhost/exercises/kantone/resolver.php?service=kantone&methode=single&id=AG';
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -19,13 +15,14 @@
 	//var_dump($info);
 	
 	$body = curl_exec($ch);
-	var_dump($body);
+	//var_dump($body);
 	curl_close($ch);
 	// Via jsonprint_r(Kanton::getInstance()->sortByName());
 	$json = json_decode($body);
+	print_r($json);
 	
 	// debug / logid)
-	var_dump($json);
+	//var_dump($json);
 	//rewind($verbose);
 	//$verboseLog = stream_get_contents($verbose);
 	//var_dump($verboseLog);
