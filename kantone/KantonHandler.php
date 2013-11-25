@@ -19,57 +19,21 @@
 		public function sortByName() {
 			$kantone = new Kanton();
 			return $kantone->sortByName();
-			/*
-			usort($kantone->getIterator(), function($a, $b) {
-				if ($a['Kanton'] == $b['Kanton']) {
-					return 0;
-				}
-				return ($a['Kanton'] < $b['Kanton']) ? -1 : 1;
-			});
-			return $kantone;
-			 */
 		}
 
 		public function sortByHauptort() {
 			$kantone = new Kanton();
 			return $kantone->sortByHauptort();
-			/*
-			usort($kantone, function($a, $b) {
-				if ($a['Hauptort'] == $b['Hauptort']) {
-					return 0;
-				}
-				return ($a['Hauptort'] < $b['Hauptort']) ? -1 : 1;
-			});
-			return $kantone;
-			 */
 		}
 		
 		public function sortByEinwohner() {
 			$kantone = new Kanton();
 			return $kantone->sortByEinwohner();
-			/*
-			usort($kantone, function($a, $b) {
-				if ($a['Einwohner 1'] == $b['Einwohner 1']) {
-					return 0;
-				}
-				return ($a['Einwohner 1'] < $b['Einwohner 1']) ? -1 : 1;
-			});
-			return $kantone;
-			 */
 		}
 	
 		public function sortByBeitritt() {
 			$kantone = new Kanton();
 			return $kantone->sortByBeitritt();
-			/*
-			usort($kantone, function($a, $b) {
-				if ($a['Beitritt'] == $b['Beitritt']) {
-					return 0;
-				}
-				return ($a['Beitritt'] < $b['Beitritt']) ? -1 : 1;
-			});
-			return $kantone;
-			 */
 		}
 		
 	
@@ -77,13 +41,6 @@
 		public function findKantonByKuerzel($kuerzel) {
 			$kantone = new Kanton();
 			return $kantone->findKantonByKuerzel($kuerzel);
-/*			$iterator = $kantone->getIterator();
-			foreach ($iterator as $kanton) {
-				if ($kuerzel === strtolower($kanton['Kuerzel'])) {
-					return $kanton;
-				}
-			}
-			return null;*/
 		}
 	}
 ?>

@@ -6,7 +6,6 @@
 	$sort = htmlspecialchars(strtolower($_GET["sort"]));
 	$id = htmlspecialchars(strtolower($_GET["id"]));
 
-	// TODO Strategy-Pattern verwenden!
 	if (isset($service) && isListAndSort($methode, $sort)) {
 		if ($sort === 'name') {
 			echo json_encode(KantonHandler::getInstance()->sortByName());
